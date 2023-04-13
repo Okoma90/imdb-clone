@@ -13,8 +13,12 @@ function App() {
         <Routes>
           <Route index element={<Home />}></Route>
           <Route path="movie/:id" element={<MovieDetail/>}></Route>
+          <Route path="movies/popular/movie/:id" element={<MovieDetail/>}></Route>
+          <Route path="movies/top_rated/movie/:id" element={<MovieDetail/>}></Route>
+          <Route path="movies/upcoming/movie/:id" element={<MovieDetail/>}></Route>
+          <Route path="movies/now_playing/movie/:id" element={<MovieDetail/>}></Route>
           <Route path="movies/:type" element ={<MovieList/>}></Route>
-          <Route path="/*" element={<h1>Something went wrong</h1>}></Route>
+          <Route path="/*" element={<div>App is still in development<img src='https://images.emojiterra.com/google/noto-emoji/animated/1f609.webp'></img></div>}></Route>
         </Routes>
       </Router>
     </div>
