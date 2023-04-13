@@ -21,7 +21,7 @@ function App() {
           <Route path="/*" element={
             <>
               <div className='error'>App is still in development, some RWD need to be done, sorry for the desktop first.</div>
-              <img className='blink' src='https://images.emojiterra.com/google/noto-emoji/animated/1f609.webp' />
+              <img className='blink' src='https://images.emojiterra.com/google/noto-emoji/animated/1f609.webp' alt='blink' />
             </>}>
           </Route>
         </Routes>
