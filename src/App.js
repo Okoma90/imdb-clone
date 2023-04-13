@@ -18,7 +18,12 @@ function App() {
           <Route path="movies/upcoming/movie/:id" element={<MovieDetail/>}></Route>
           <Route path="movies/now_playing/movie/:id" element={<MovieDetail/>}></Route>
           <Route path="movies/:type" element ={<MovieList/>}></Route>
-          <Route path="/*" element={<div>App is still in development<img src='https://images.emojiterra.com/google/noto-emoji/animated/1f609.webp'></img></div>}></Route>
+          <Route path="/*" element={
+            <>
+              <div className='error'>App is still in development, some RWD need to be done, sorry for the desktop first.</div>
+              <img className='blink' src='https://images.emojiterra.com/google/noto-emoji/animated/1f609.webp' />
+            </>}>
+          </Route>
         </Routes>
       </Router>
     </div>

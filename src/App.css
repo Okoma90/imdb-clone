@@ -3,3 +3,18 @@
   color: white;
   font-family: sans-serif;
 }
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height: 30vh;
+}
+
+.blink {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
