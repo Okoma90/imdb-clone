@@ -125,7 +125,7 @@
 
 .movie__production {
   margin-top: 20px;
-  width: 85%;
+  width: 95%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -136,7 +136,7 @@
 }
 
 .movie__productionCompany {
-  width: 200px;
+  width: 150px;
   margin: 2rem;
 }
 
