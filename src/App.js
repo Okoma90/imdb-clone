@@ -13,10 +13,7 @@ function App() {
         <Routes>
           <Route index element={<Home />}></Route>
           <Route path="movie/:id" element={<MovieDetail/>}></Route>
-          <Route path="movies/popular/movie/:id" element={<MovieDetail/>}></Route>
-          <Route path="movies/top_rated/movie/:id" element={<MovieDetail/>}></Route>
-          <Route path="movies/upcoming/movie/:id" element={<MovieDetail/>}></Route>
-          <Route path="movies/now_playing/movie/:id" element={<MovieDetail/>}></Route>
+          <Route path="movies/:category/movie/:id" element={<MovieDetail/>}></Route>
           <Route path="movies/:type" element ={<MovieList/>}></Route>
           <Route path="/*" element={
             <>
