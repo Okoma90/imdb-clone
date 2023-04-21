@@ -13,7 +13,6 @@ const MovieDetail = () => {
       .then((res) => res.json())
       .then((data) => {
         setMovieDetail(data);
-        console.log(data); // log the actual value here
       });
   }, [id]);
 
