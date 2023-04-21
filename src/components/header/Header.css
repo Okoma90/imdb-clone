@@ -21,7 +21,7 @@ a > span:hover {
 }
 
 .header__icon {
-  width: 50px;
+  width: 80px;
   cursor: pointer;
 }
 
@@ -34,7 +34,6 @@ a > span:hover {
   }
   
   .headerLeft {
-    display: flex;
     flex-direction: row;
     margin: 0;
   }
@@ -42,18 +41,6 @@ a > span:hover {
   a > span {
     margin: 0 30px;
     font-size: 1.3rem;
-    cursor: pointer;
     text-align: center;
-    display: block;
-    color: white;
-  }
-  
-  a > span:hover {
-    color: #F5C518;
-  }
-  
-  .header__icon {
-    width: 80px;
-    cursor: pointer;
   }
 }
