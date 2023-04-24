@@ -7,30 +7,28 @@
 }
 
 .movie__intro {
-  width: 80%;
+  width: 100%;
 }
 
 .movie__backdrop {
   width: 100%;
-  height: 500px;
-  object-fit:cover;
-  object-position: 0 35%;
 }
 
 .movie__detail {
   align-items: center;
-  width: 75%;
+  width: 95%;
   display: flex;
   position: relative;
-  bottom: 225px;
+  bottom: 140px;
 }
 
 .movie__detailLeft {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .movie__poster {
-  width:300px;
+  margin-bottom: 50px;
+  width: 150px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
 }
@@ -39,44 +37,47 @@
   color: white;
   display: flex;
   flex-direction: column;
-  height: 450px;
-  justify-content:space-between ;
+  justify-content: space-between;
+  font-size: .8rem;
 }
 
-.movie__detailRightTop > div{
+.movie__detailRightTop > div {
   text-shadow: 0px 0px 5px #000000;
   margin-bottom: .5rem;
 }
 
 .movie__name {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .movie__voteCount {
-  margin-left: 1rem;
+  margin-left: .5rem;
 }
 
 .movie__genres {
   margin: 1.25rem 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .movie__genre {
-  padding: .5rem;
-  border: 2px solid white;
+  padding: .4rem;
+  border: 1px solid white;
   border-radius: 20px;
-  margin-right: 1rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
 }
 
 
 .movie__detailRightBottom {
-  margin: 2rem 0;
+  margin: 1rem 0;
   flex: 0.8;
 }
 
 .synopsisText {
-  font-size: 1.5rem;
-  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  margin-bottom: .5rem;
   font-weight: 600;
   display: flex;
   position: relative;
@@ -88,31 +89,33 @@
 
 .movie__links {
   position: relative;
-  bottom: 120px;
+  bottom: 0;
+  height: 200px;
   display: flex;
-  justify-content: space-between;
-  width: 75%;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 95%;
 }
 
 .movie__heading {
-  font-size: 2.2rem;
+  font-size: 1rem;
 }
 
 .movie__Button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.8rem 2rem;
+  padding: .5rem 2rem;
   border-radius: 20px;
   cursor: pointer;
-  width: 150px;
+  width: 70px;
   color: black;
   font-weight: bold;
 }
 
 .movie__homeButton {
   background-color:rgb(255, 0, 0);
-  
 }
 
 .movie__imdbButton {
@@ -136,8 +139,8 @@
 }
 
 .movie__productionCompany {
-  width: 150px;
-  margin: 2rem;
+  width: 40px;
+  margin: 2.1rem;
 }
 
 .productionCompanyImage {
@@ -145,4 +148,131 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: .7rem;
+}
+
+@media screen and (min-width: 650px) {
+
+  .movie__backdrop {
+    width: 100%;
+  }
+  
+  .movie__detail {
+    bottom: 220px;
+  }
+  
+  .movie__detailLeft {
+    margin-right: 30px;
+  }
+
+  .movie__poster {
+    width: 200px;
+    margin-bottom: 0;
+  }
+  
+  .movie__detailRight {
+    font-size: 1rem;
+  }
+  
+  .movie__name {
+    font-size: 2.5rem;
+  }
+  
+  .synopsisText {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .movie__links {
+    bottom: 100px;
+  }
+  
+  .movie__heading {
+    font-size: 1.5rem;
+  }
+  
+  .movie__Button {
+    padding: .8rem 2rem;
+    width: 100px;
+  }
+  
+  .movie__productionCompany {
+    width: 80px;
+    margin: 2rem;
+  }
+  
+  .productionCompanyImage {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+
+  .movie__intro {
+    width: 80%;
+  }
+  
+  .movie__backdrop {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: 0 35%;
+  }
+  
+  .movie__detail {
+    width: 75%;
+    bottom: 240px;
+  }
+  
+  .movie__poster {
+    width: 300px;
+  }
+  
+  .movie__detailRight {
+    height: 450px;
+    font-size: 1.1rem;
+  }
+  
+  .movie__name {
+    font-size: 3rem;
+  }
+  
+  .movie__voteCount {
+    margin-left: 1rem;
+  }
+  
+  .movie__genre {
+    padding: .5rem;
+    border: 2px solid white;
+  }
+  
+  .synopsisText {
+    font-size: 2rem;
+  }
+  
+  .movie__links {
+    bottom: 120px;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+  }
+  
+  .movie__heading {
+    font-size: 2.2rem;
+  }
+  
+  .movie__Button {
+    padding: .8rem 2rem;
+    width: 150px;
+  }
+  
+  .movie__productionCompany {
+    width: 150px;
+    margin: 4rem;
+  }
+  
+  .productionCompanyImage {
+ font-size: 1rem;
+  }
 }
