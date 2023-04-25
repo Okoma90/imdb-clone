@@ -69,7 +69,6 @@
   margin-bottom: .5rem;
 }
 
-
 .movie__detailRightBottom {
   margin: 1rem 0;
   flex: 0.8;
@@ -83,6 +82,7 @@
   position: relative;
   align-items: center;
 }
+
 .synopsisText > div:last-of-type {
   margin-left: auto;
 }
@@ -132,6 +132,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  flex-wrap: wrap;
   margin-bottom: 4rem;
   background-color: #ffffff27;
   border-radius: 20px;
@@ -151,7 +152,7 @@
   font-size: .7rem;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 640px) {
 
   .movie__backdrop {
     width: 100%;
@@ -268,11 +269,11 @@
   }
   
   .movie__productionCompany {
-    width: 150px;
+    width: 120px;
     margin: 4rem;
   }
   
   .productionCompanyImage {
- font-size: 1rem;
+    font-size: 1rem;
   }
 }

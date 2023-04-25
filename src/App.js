@@ -17,7 +17,7 @@ function App() {
           <Route path="movies/:type" element ={<MovieList/>}></Route>
           <Route path="/*" element={
             <>
-              <div className='error'>App is still in development, some RWD need to be done, sorry for the desktop first.</div>
+              <div className='error'>Unfortunately, we don't know such a film, please try with another one</div>
               <img className='blink' src='https://images.emojiterra.com/google/noto-emoji/animated/1f609.webp' alt='blink' />
             </>}>
           </Route>

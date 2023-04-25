@@ -8,13 +8,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
-  height: 30vh;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20vh;
 }
 
 .blink {
+  margin: 50px auto;
   width: 150px;
   height: 150px;
   display: block;
-  margin: 0 auto;
 }
