@@ -11,7 +11,7 @@ const MovieList = () => {
     fetch(
       `https://api.themoviedb.org/3/movie/${
         type ? type : "popular"
-      }?api_key=9a9b15e0cefb886feade24d59c9f65a6&language=en-US`
+      }?api_key=${process.env.REACT_APP_MOVIE_API_KEY}&language=en-US`
     )
       .then((res) => res.json())
       .then((data) => setMovieList(data.results));
