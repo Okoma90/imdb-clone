@@ -14,6 +14,10 @@
   width: 100%;
 }
 
+.movie__backdropPlaceholder {
+  height: 160px;
+}
+
 .movie__detail {
   align-items: center;
   width: 95%;
@@ -156,6 +160,10 @@
 
   .movie__backdrop {
     width: 100%;
+  }
+
+  .movie__backdropPlaceholder {
+    height: 300px;
   }
   
   .movie__detail {

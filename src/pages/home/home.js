@@ -5,12 +5,14 @@ import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import MovieList from '../../components/movieList/movieList';
 
+const popularMoviesURL = 'https://api.themoviedb.org/3/movie/popular';
+
 const Home = () => {
 
   const [ popularMovies, setPopularMovies ] = useState([])
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_MOVIE_API_KEY}&language=en-US`)
+    fetch(`${popularMoviesURL}?api_key=${process.env.REACT_APP_MOVIE_API_KEY}&language=en-US`)
       .then(res => res.json())
       .then(data => setPopularMovies(data.results))
   }, [])

@@ -2,13 +2,15 @@ import React, { useEffect, useState, useCallback } from "react";
 import "./movieDetail.css";
 import { useParams } from "react-router-dom";
 
+const movieDetailUrl = 'https://api.themoviedb.org/3/movie/'
+
 const MovieDetail = () => {
   const [currentMovieDetail, setMovieDetail] = useState();
   const { id } = useParams();
 
   const getData = useCallback(() => {
     fetch(
-        `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_MOVIE_API_KEY}&language=en-US`
+        `${movieDetailUrl}${id}?api_key=${process.env.REACT_APP_MOVIE_API_KEY}&language=en-US`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -24,9 +26,11 @@ const MovieDetail = () => {
 
   return (
     <div className="movie">
-        <div className="movie__intro">
-            {currentMovieDetail && currentMovieDetail.backdrop_path && <img className="movie__backdrop" src={`https://image.tmdb.org/t/p/original${currentMovieDetail.backdrop_path}`} alt={'Movie backdrop'}/>}
-        </div>
+        {currentMovieDetail && (<div className="movie__intro">{currentMovieDetail.backdrop_path 
+        ? <img className="movie__backdrop" src={`https://image.tmdb.org/t/p/original${currentMovieDetail.backdrop_path}`} alt={'Movie backdrop'}/>
+        : <div className="movie__backdropPlaceholder" />}
+    </div>
+    )}
         <div className="movie__detail">
             <div className="movie__detailLeft">
                 <div className="movie__posterBox">
